@@ -1,0 +1,25 @@
+<!--pages/day04/day04.wxml-->
+<text class=".g-red-text">pages/day04/day04.wxml</text>
+<view></view>
+<my-test1 max='9'></my-test1>
+<view></view>
+<my-test2></my-test2>
+
+<my-test3></my-test3>
+
+<my-test4>
+    <view slot="before">这里是before插槽内容</view>
+    <view slot="after">这里是after插槽内容</view>
+</my-test4>
+<view>~~~~~~~~~~~~~~~~~~~~~</view>
+<my-test5 count="{{count}}" bind:sync="syncCount" class="customA" id="cA"></my-test5>
+<view>~~~~~~~~~~~~~~~~~~~~~</view>
+<view>父组件中，count值是：{{count}}</view>
+
+<button bindtap="getChild">获取子组件的实例对象</button>
+
+<button bindtap="GetLoc">获取地理位置</button>
+<view>{{latitude}}</view>
+<view>{{longitude}}</view>
+<view>{{speed}}</view>
+<view>{{accuracy}}</view>

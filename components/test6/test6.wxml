@@ -1,0 +1,5 @@
+<!--components/test6/test6.wxml-->
+
+<view>--------------------</view>
+<van-button type='primary' bindtap="btnHandler2" data-step="{{1}}">numB+1</van-button>
+<van-button type='danger' bindtap="btnHandler2" data-step="{{-1}}">numB-1</van-button>

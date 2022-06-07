@@ -1,0 +1,23 @@
+<!--custom-tab-bar/index.wxml-->
+
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+  <van-tabbar-item icon="search">搜索</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">通讯</van-tabbar-item>
+  <van-tabbar-item icon="setting-o">设置</van-tabbar-item>
+  <van-tabbar-item info="3">
+    <image
+      slot="icon"
+      src="/images/day1.png"
+      mode="aspectFit"
+      style="width: 30px; height: 30px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/bg8.jpg"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    自定义
+  </van-tabbar-item>
+</van-tabbar>

@@ -1,0 +1,22 @@
+<!--pages/textbutton/textbutton.wxml-->
+<image></image>
+<image src="/images/bg8.jpg" mode="aspectFill"></image>
+
+<!-- 按钮组件的基本使用 -->
+<view>---------通过type属性指定按钮颜色类型---------</view>
+<button>普通按钮</button>
+<button type="primary">主色调按钮</button>
+<button type="warn">警告按钮</button>
+<view>----------size='mini' 小尺寸按钮---------------- </view>
+<button size="mini">普通按钮</button>
+<button size="mini" type="primary">主色调按钮</button>
+<button size="mini" type="warn">警告按钮</button>
+<view>---------------plain 镂空按钮------------------- </view>
+<button size="mini" plain>普通按钮</button>
+<button size="mini" type="primary" plain>主色调按钮</button>
+<button size="mini" type="warn" plain>警告按钮</button>
+
+<navigator open-type="navigateBack" delta='1'>后退</navigator>
+<button  bindtap="gotoTabBar">跳转到tabBar页面</button>
+<button bindtap="goBack">后退</button>
+<view class="box"></view>

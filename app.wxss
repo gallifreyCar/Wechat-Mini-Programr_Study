@@ -1,0 +1,26 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+page {
+  /* 定制全局样式变量 */
+  --button-danger-background-color:#000;
+  --button-darger-border-color:#D60000;
+}
+
+.g-red-text{
+  color: red;
+}
+
+/* view {
+  padding: 10rpx;
+  margin: 10rpx;
+  background-color: lightcyan;
+} */

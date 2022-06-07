@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText":"第二天打卡",
+  "backgroundColor":"#000",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true
+}

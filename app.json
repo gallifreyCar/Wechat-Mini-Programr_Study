@@ -1,0 +1,98 @@
+{
+  "pages":[
+    "pages/day02_1/day02_1", 
+    "pages/testbutton/testbutton",
+    "pages/hellow/world",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/seban/seban",
+    "pages/day04/day04",
+    "pages/day05/day05"
+  ],
+  "subPackages": [
+    {
+      "root": "pkgA",
+      "name": "p1",
+      "pages": [
+        "pages/cat/cat"
+      ]
+    },
+    {
+      "root": "pkgB",
+      "name": "p2",
+      "pages": [
+        "pages/apple/apple"
+      ]
+    }
+  ],
+
+  "preloadRule": {
+    "pages/day05/day05":{
+      "packages": [
+        "p1"
+      ],
+      "network": "all" 
+    }
+  },
+
+  "window":{
+    "navigationBarBackgroundColor": "#2b6b4b",
+    "navigationBarTitleText": "一周入门小程序开发",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#2b6b4b",
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/hellow/world",
+        "text":"day1",
+        "iconPath": "/images/day1.png",
+        "selectedIconPath": "/images/day1-active.png"
+        },
+      {
+        "pagePath": "pages/day02_1/day02_1",
+        "text": "day2",
+        "iconPath": "/images/day2.png",
+        "selectedIconPath": "/images/day2-active.png"
+      },{
+        "pagePath": "pages/seban/seban",
+        "text": "day3",
+        "iconPath": "/images/day3.png",
+        "selectedIconPath": "/images/day3-active.png"
+      },{
+        "pagePath": "pages/day04/day04",
+        "text": "day4",
+        "iconPath": "/images/day4.png",
+        "selectedIconPath": "/images/day4-active.png"
+      },
+      {
+        "pagePath": "pages/day05/day05",
+        "text": "day5",
+        "iconPath": "/images/day4.png",
+        "selectedIconPath": "/images/day4-active.png"
+      }
+
+    ]
+  },
+ 
+  "sitemapLocation": "sitemap.json",
+
+  "usingComponents": {
+    "my-test2":"/components/test2/test2",
+    "my-test3":"/components/test3/test3",
+    "my-test4":"/components/test4/test4",
+    "my-test5":"/components/test5/test5",
+    "van-button": "@vant/weapp/button/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  },
+  "permission": {
+    "scope.userLocation": {
+        "desc": "请求你的位置用于打卡活动" 
+      }
+  }
+}

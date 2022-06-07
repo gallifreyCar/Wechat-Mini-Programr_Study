@@ -1,0 +1,28 @@
+<!--pages/hellow/world.wxml-->
+<!-- 轮播图区域 -->
+<!-- indicator-dots 属性： 显示面板指示点 -->
+<swiper class="container1" indicator-dots circular="True">
+  <swiper-item>
+    <view class="item">实现长按选择文本
+      <text selectable="True">1910200427</text>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">B</view>
+  </swiper-item>
+  <swiper-item>               
+    <view class="item">C</view>
+  </swiper-item>
+</swiper>
+<rich-text nodes="<h1 style='color:red;'>小程序渲染html</h1>"></rich-text>
+
+<view>{{m1.toUpper(username)}}</view>
+<wxs module="m1">
+  module.exports.toUpper = function(str){
+    //转换大写
+    return str.toUpperCase()
+  }
+</wxs>
+
+<view>{{m2.toLower(country)}}</view>
+<wxs src="../../utils/tools.wxs" module="m2"></wxs>

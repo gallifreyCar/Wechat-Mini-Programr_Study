@@ -1,0 +1,4 @@
+<!--components/test5/test5.wxml-->
+<text>子组件中count的值:{{count}}</text>
+<button bindtap="addCount" type="primary">+1</button>
+<view>在behavior中定义的数据:{{username}}</view>

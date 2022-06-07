@@ -1,0 +1,9 @@
+/* pages/day02_1/day02_1.wxss */
+@import"/commom/common.wxss";
+
+.inputd1{
+  border: 1px solid #eee;
+  margin: 5px;
+  padding:5px;
+  border-radius: 3px;
+}

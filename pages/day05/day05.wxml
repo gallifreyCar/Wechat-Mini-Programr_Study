@@ -1,0 +1,15 @@
+<!--pages/day05/day05.wxml-->
+<view>Vant组件</view>
+<view></view>
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>
+
+<van-button type="danger" bindtap="getInfo">测试promise化的api</van-button>
+
+<view>{{numA}}+{{numB}}={{sum}}</view>
+<van-button type='primary' bindtap="btnHandler1" data-step="{{1}}">numA+1</van-button>
+<van-button type='danger' bindtap="btnHandler1" data-step="{{-1}}">numA-1</van-button>
+<test6></test6>
